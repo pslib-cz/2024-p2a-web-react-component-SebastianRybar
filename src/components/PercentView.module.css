@@ -6,4 +6,12 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 0.5em;
+    flex-wrap: wrap;
+}
+
+.bar{
+    width: 100%;
+    height: 20px;
+    background-color: #f3f3f3;
+    border: 1px solid black;
 }

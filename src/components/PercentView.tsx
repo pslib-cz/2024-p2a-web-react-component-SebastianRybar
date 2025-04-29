@@ -10,7 +10,10 @@ const PercentView: FC<PercentViewType> = ({max, value, makeColor}) =>{
    
     return(
         <div className={style.percentview} style={ {color: makeColor(value/max)} }>
-           {max}
+           {value / max * 100}%
+           <div className={style.bar}>
+                <div style={ {height: "100%", color: makeColor(value/max), width: "$(value/max * 100)"} }></div> 
+           </div>
         </div>
     )
 }
