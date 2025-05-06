@@ -46,7 +46,7 @@ import ViewBox from './components/PercentView.tsx'
 const App = () => {
     let cislo: number = 34;
     cislo -= 1;
-
+ 
     return(
         <>
            <ViewBox value={cislo + 1} max={100} makeColor = {(p) => "green"} />
